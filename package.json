@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "engines": {
+  "engines":{
     "node": ">=20"
   },
   "dependencies": {
