@@ -54,9 +54,11 @@ class AppErrorBoundary extends Component<{ children: ReactNode }, { error: Error
   }
 }
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <FlowProvider>
         <AppErrorBoundary>
           <Routes>
